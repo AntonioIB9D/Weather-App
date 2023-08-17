@@ -1,6 +1,6 @@
 # Weather App 🌦️
 
-🛠️ Aplicación para consultar el clima 
+ Aplicación para consultar el clima 
 
 Acciones disponibles en la aplicación:
 
