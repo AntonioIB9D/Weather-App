@@ -1,11 +1,10 @@
 import AppClima from './components/AppClima';
+import NavbarUI from './components/Navbar';
 import { ClimaProvider } from './context/ClimaProvider';
 function App() {
   return (
     <ClimaProvider>
-      <header>
-        <h1>Clima</h1>
-      </header>
+      <NavbarUI />
       <AppClima />
     </ClimaProvider>
   );

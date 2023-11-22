@@ -1,19 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: quicksand;
-  background-color: rgb(30, 71, 134);
   font-size: 1.2rem;
-}
-header {
-  background-color: rgb(30, 71, 134);
-  margin-top: 1rem;
-  padding: 0.5rem;
-}
-header h1 {
-  text-align: center;
-  color: white;
-  font-family: quicksand;
-  font-size: 3rem;
-  margin: 0;
 }
 .dos-columnas {
   display: grid;
