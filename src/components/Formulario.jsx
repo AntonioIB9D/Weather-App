@@ -19,8 +19,8 @@ const Formulario = () => {
   };
 
   return (
-    <Card>
-      <CardBody>
+    <Card className="text-center flex justify-center">
+      <CardBody className="flex flex-col justify-center items-center gap-4">
         {alerta && <p className="alert text-base">{alerta}</p>}
         <form onSubmit={handleSubmit}>
           <div className="campo">
