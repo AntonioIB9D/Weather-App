@@ -11,8 +11,8 @@ import {
   NavbarMenuItem,
   Image,
 } from '@nextui-org/react';
-import sol from '/public/sol.png';
-import luna from '/public/luna.png';
+import sol from '/sol.png';
+import luna from '/luna.png';
 
 export default function NavbarUI() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

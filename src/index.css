@@ -21,9 +21,8 @@ main {
 }
 .contenedor {
   margin: 0 auto 2rem auto;
-  color: white;
+  color: black;
   border-radius: 0.6rem;
-  background-color: rgb(40, 81, 141);
   padding: 2.5rem;
   width: 100%;
 }
@@ -32,10 +31,12 @@ main {
   text-align: center;
   font-weight: 500;
   color: red;
+  font-size: 1rem;
 }
 
 form {
   width: 100%;
+  font-size: 1rem;
 }
 .campo {
   max-width: 400px;
@@ -44,19 +45,18 @@ form {
 .campo label {
   display: block;
   margin-bottom: 0.7rem;
+  font-weight: 700;
 }
 .campo input,
 .campo select {
   all: unset;
   border: 1px solid #cbd5e1;
-  background-color: rgb(40, 81, 141);
-  width: 100%;
+  width: 90%;
   border-radius: 1rem;
   padding: 0.5rem;
 }
 
 input[type='submit'] {
-  background-color: rgb(30, 71, 134);
   margin: 2rem auto 0 auto;
   display: block;
   padding: 0.8rem;
