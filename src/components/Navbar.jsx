@@ -54,6 +54,7 @@ export default function NavbarUI() {
       <NavbarContent justify="end">
         <NavbarItem>
           <Button
+            className="button-navbar"
             as={Link}
             color="primary"
             variant="bordered"
