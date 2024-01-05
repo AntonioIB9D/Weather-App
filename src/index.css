@@ -12,14 +12,19 @@
 body {
   font-family: Quicksand;
   font-size: 1.2rem;
+  background-color: #212121;
+  height: auto;
 }
+
 .dos-columnas {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .dos-columnas {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
   }
 }
 main {

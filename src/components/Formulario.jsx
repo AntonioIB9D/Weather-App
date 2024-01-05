@@ -1,5 +1,12 @@
 import { useState } from 'react';
-import { Button, Card, CardBody } from '@nextui-org/react';
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Divider,
+} from '@nextui-org/react';
 import useClima from '../hooks/useClima';
 
 const Formulario = () => {
@@ -19,8 +26,12 @@ const Formulario = () => {
   };
 
   return (
-    <Card className="text-center flex justify-center">
-      <CardBody className="flex flex-col justify-center items-center gap-4">
+    <Card className="text-center flex justify-center border-4 border-indigo-200 border-x-indigo-500 ">
+      <CardHeader className="flex justify-center items-center font-bold">
+        Buscador de clima
+      </CardHeader>
+      <Divider />
+      <CardBody className="flex flex-col justify-center items-center">
         {alerta && <p className="alert text-base">{alerta}</p>}
         <form onSubmit={handleSubmit}>
           <div className="campo">
@@ -52,14 +63,22 @@ const Formulario = () => {
             <Button
               type="submit"
               value="consultar clima"
-              color="primary"
+              color="warning"
               size="md"
+              className="text-1xl font-bold"
             >
               Consultar clima
             </Button>
           </div>
         </form>
       </CardBody>
+      <Divider />
+      <CardFooter>
+        <small className="text-1xl">
+          <b>Nota:</b> La consulta puede no ser precisa debida a la información
+          devuelta por la API
+        </small>
+      </CardFooter>
     </Card>
   );
 };
