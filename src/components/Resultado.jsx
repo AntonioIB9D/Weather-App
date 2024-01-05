@@ -44,7 +44,7 @@ const Resultado = () => {
           </p>
           <p className="border-4 border-sky-400/100 p-3">
             <b>Humedad:</b> {parseInt(main.humidity)}
-            <span>&#x2103;</span>
+            <span>%</span>
           </p>
         </div>
       </CardBody>
